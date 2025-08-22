@@ -1,0 +1,68 @@
+<section class="custom-banner-section">
+  <div class="banner-content">
+    <div class="header">
+      <!-- Hamburger button -->
+      <button class="hamburger" aria-label="Menu">
+        ☰
+      </button>
+      <a href="./" class="logo">TISSO VISON</a>
+      <!-- Collapsible menu -->
+      <nav class="menu">
+        <p class="header-text">Find the ideal gift for your loved ones</p>
+        <a href="./" class="primary_btn">CHOOSE GIFT →</a>
+      </nav>
+    </div>
+    <img class="banner-image1" src="https://cdn.shopify.com/s/files/1/0774/3238/9876/files/Frame.svg?v=1755421917" alt="image" width= "100%" height= "100%">
+    <div class="lower-content">
+      <div clas="banner-inner-content">
+        <h1 class= "heading">The Gift Guide</h1>
+        <p class="subtitle subtitle1"> Discover Joy: Your Ultimate Holiday Gift Destination.
+        </p>
+        <p class="subtitle subtitle2">Explore our curated selection and find the perfect gifts to delight
+          your loved ones this holiday season.
+        </p>
+        <a href="./" class="secondary_btn">SHOP NOW →</a>
+      </div>
+      <div class="banner-wrapper">
+        <img src="https://cdn.shopify.com/s/files/1/0774/3238/9876/files/Frame_1.svg?v=1755421917" alt="image" width= "100%" height= "100%">
+      </div>
+    </div>
+    <div>
+      <p class="single-text">Sustainable, ethically made clothes in sizes xxs to 6xl</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Banner Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Sub Text",
+      "default": "This is the banner area"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ]
+}
+{% endschema %}
